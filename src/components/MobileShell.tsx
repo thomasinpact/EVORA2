@@ -42,8 +42,8 @@ export default function MobileShell({ children }: { children: React.ReactNode })
         {children}
       </main>
 
-      <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-border/50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-40">
-        <div className="flex justify-around items-center h-[70px] max-w-screen-sm mx-auto px-4 safe-bottom">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] z-50">
+        <div className="flex justify-around items-center h-[70px] max-w-screen-sm mx-auto px-2">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             const Icon = item.icon;
